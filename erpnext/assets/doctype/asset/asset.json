@@ -126,7 +126,7 @@
    "fieldname": "asset_owner",
    "fieldtype": "Select",
    "label": "Asset Owner",
-   "options": "\nCompany\nSupplier\nCustomer"
+   "options": "\nCompany\nSupplier\nCustomer\nEmployee"
   },
   {
    "depends_on": "eval:doc.asset_owner == \"Company\"",
