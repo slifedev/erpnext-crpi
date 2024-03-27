@@ -16,6 +16,7 @@ frappe.listview_settings['Task'] = {
 	get_indicator: function(doc) {
 		var colors = {
 			"Open": "orange",
+			"Backlog": "blue",
 			"Overdue": "red",
 			"Pending Review": "orange",
 			"Working": "orange",

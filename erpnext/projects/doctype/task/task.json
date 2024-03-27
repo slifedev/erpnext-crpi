@@ -118,7 +118,7 @@
    "no_copy": 1,
    "oldfieldname": "status",
    "oldfieldtype": "Select",
-   "options": "Open\nWorking\nPending Review\nOverdue\nTemplate\nCompleted\nCancelled"
+   "options": "Open\nBacklog\nWorking\nPending Review\nOverdue\nTemplate\nCompleted\nCancelled"
   },
   {
    "fieldname": "priority",
