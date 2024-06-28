@@ -1,0 +1,1459 @@
+{
+    "country_code": "ua",
+    "name": "Ukrainian - Chart of Accounts",
+    "tree": {
+        "Допоміжний Рахунок": {
+            "is_group": 1,
+            "account_number": "00",
+            "root_type": "Asset",
+            "account_type": "Temporary"
+        },
+        "Необоротні активи": {
+            "is_group": 1,
+            "account_number": "1",
+            "root_type": "Asset",
+            "Основні засоби": {
+                "is_group": 1,
+                "account_number": "10",
+                "Інвестиційна нерухомість": {
+                    "account_number": "100",
+                    "account_type": "Fixed Asset"
+                },
+                "Земельні Ділянки": {
+                    "account_number": "101",
+                    "account_type": "Fixed Asset"
+                },
+                "Інші основні засоби": {
+                    "account_number": "109",
+                    "Інші основні засоби": {
+                        "account_number": "1091",
+                        "Основні засоби призначені для продажу": {
+                            "account_number": "1092",
+                            "account_type": "Fixed Asset"
+                        }
+                    }
+                }
+            },
+            "Інші необоротні матеріальні активи": {
+                "is_group": 1,
+                "account_number": "11",
+                "Бібліотечні фонди": {
+                    "is_group": 1,
+                    "account_number": "111",
+                    "Бібліотечні фонди (по кожному об`єкту)": {
+                        "account_number": "1111",
+                        "account_type": "Fixed Asset"
+                    },
+                    "Бібліотечні фонди (кількісно)": {
+                        "account_number": "1112",
+                        "account_type": "Fixed Asset"
+                    }
+                },
+                "Малоцінні необоротні матеріальні активи": {
+                    "is_group": 1,
+                    "account_number": "112",
+                    "Малоцінні необоротні матеріальні активи (по кожному об`єкту)": {
+                        "account_number": "1121",
+                        "account_type": "Fixed Asset"
+                    },
+                    "Малоцінні необоротні матеріальні активи (кількісно)": {
+                        "account_number": "1122",
+                        "account_type": "Fixed Asset"
+                    }
+                },
+                "Тимчасові (нетитульні) споруди": {
+
+                    "account_number": "113",
+                    "account_type": "Fixed Asset"
+                },
+                "Природні ресурси": {
+
+                    "account_number": "114",
+                    "account_type": "Fixed Asset"
+                },
+                "Інвентарна тара": {
+                    "account_number": "115",
+                    "account_type": "Fixed Asset"
+
+                },
+                "Предмети прокату": {
+                    "account_number": "116",
+                    "account_type": "Fixed Asset"
+                },
+                "Тварини": {
+                    "account_number": "107",
+                    "account_type": "Fixed Asset"
+
+                },
+                "Багаторічні насадження": {
+
+                    "account_number": "108",
+                    "account_type": "Fixed Asset"
+                }
+            },
+            "Знос (амортизацiя) необоротних активів": {
+                "is_group": 1,
+                "account_number": "13",
+                "Знос основних засобів": {
+                    "account_number": "131",
+                    "account_type": "Depreciation"
+                },
+                "Знос інших необоротних матеріальних активів": {
+                    "is_group": 1,
+                    "account_number": "132",
+                    "Знос інших необоротних матеріальних активів (по кожному об`єкту)": {
+                        "account_number": "1321",
+                        "account_type": "Depreciation"
+                    },
+                    "Знос інших необоротних матеріальних активів (кількісно)": {
+                        "account_number": "1322",
+                        "account_type": "Depreciation"
+                    }
+                },
+                "Накопичена амортизацiя нематеріальних активів": {
+                    "account_number": "133",
+                    "account_type": "Accumulated Depreciation"
+                },
+                "Знос інвестиційної нерухомості": {
+                    "account_number": "135",
+                    "account_type": "Depreciation"
+                }
+            }
+        },
+        "Запаси": {
+            "is_group": 1,
+            "account_number": "2",
+            "root_type": "Asset",
+            "Виробничі запаси": {
+                "is_group": 1,
+                "account_number": "20",
+                "Транспортно-заготівельні витрати (матеріали)": {
+                    "account_number": "200",
+                    "account_type": "Stock"
+                },
+                "Сировина й матеріали": {
+                    "account_number": "201",
+                    "account_type": "Stock"
+                },
+                "Купівельні напівфабрикати та комплектуючі вироби": {
+                    "account_number": "202",
+                    "account_type": "Stock"
+                },
+                "Паливо": {
+                    "account_number": "203",
+                    "account_type": "Stock"
+                },
+                "Тара й тарні матеріали": {
+
+                    "account_number": "204",
+                    "account_type": "Stock"
+
+                },
+                "Будівельні матеріали": {
+
+                    "account_number": "205",
+                    "account_type": "Stock"
+
+                },
+                "Матеріали, передані в переробку": {
+
+                    "account_number": "206",
+                    "account_type": "Stock"
+
+                },
+                "Запасні частини": {
+
+                    "account_number": "207",
+                    "account_type": "Stock"
+
+                },
+                "Матеріали сільськогосподарського призначення": {
+
+                    "account_number": "208",
+                    "account_type": "Stock"
+
+                },
+                "Інші матеріали": {
+                    "account_number": "209",
+                    "account_type": "Stock"
+
+                }
+            },
+            "Поточні біологічні активи": {
+                "is_group": 1,
+                "account_number": "21",
+                "Поточні біологічні активи рослинництва, які оцінені за справедливою вартістю": {
+                    "account_number": "211",
+                    "account_type":"Fixed Asset"
+                },
+                "Поточні біологічні активи тваринництва, які оцінені за справедливою вартістю": {
+
+                    "account_number": "212",
+                    "account_type":"Fixed Asset"
+
+                },
+                "Поточні біологічні активи тваринництва, які оцінені за первісною вартістю": {
+
+                    "account_number": "213",
+                    "account_type":"Fixed Asset"
+
+                }
+            },
+            "Малоцінні та швидкозношувані предмети": {
+                "is_group": 1,
+                "account_number": "22",
+                "Малоцінні та швидкозношувані предмети на складах": {
+                    "account_number": "221",
+                    "account_type":"Stock"
+
+                }
+            },
+            "Виробництво": {
+                "is_group": 1,
+                "account_number": "23",
+                "root_type": "Asset",
+                "Основне виробництво": {
+
+                    "account_number": "231"
+                },
+                "Допоміжні виробництва": {
+
+                    "account_number": "232"
+                },
+                "Обслуговуючі виробництва": {
+
+                    "account_number": "233"
+                },
+                "Давальницьке виробництво": {
+
+                    "account_number": "234"
+                },
+                "Обслуговування і ремонт необоротних активів": {
+
+                    "account_number": "235"
+                }
+            },
+            "Брак у виробництві": {
+                "account_type": "Expenses Included In Asset Valuation",
+                "account_number": "24"
+            },
+            "Напівфабрикати": {
+                "is_group": 1,
+                "account_number": "25",
+                "Напівфабрикати": {
+
+                    "account_number": "250",
+                    "account_type": "Stock"
+
+                }
+            },
+            "Готова продукція": {
+
+                "account_number": "26",
+                "account_type": "Stock"
+            },
+            "Продукція сільськогосподарського виробництва": {
+                "account_number": "27",
+                "account_type": "Stock"
+
+            },
+            "Товари": {
+                "is_group": 1,
+                "account_number": "28",
+                "Транспортно-заготівельні витрати": {
+                    "is_group": 1,
+                    "account_number": "280",
+                    "Транспортно-заготівельні витрати (товари)": {
+
+                        "account_number": "2801",
+                        "account_type": "Expenses Included In Asset Valuation"
+                    },
+                    "Транспортно-заготівельні витрати (у НТТ за продажною вартістю)": {
+
+                        "account_number": "2802",
+                        "account_type": "Expenses Included In Valuation"
+
+                    }
+                },
+                "Товари на складі": {
+                    "account_number": "281",
+                    "account_type": "Stock"
+                },
+                "Товари в торгівлі": {
+                    "is_group": 1,
+                    "account_number": "282",
+                    "Товари в роздрібній торгівлі (в АТТ за продажною вартістю)": {
+                        "account_number": "2821",
+                        "account_type": "Stock"
+
+                    },
+                    "Товари в роздрібній торгівлі (в НТТ за продажною вартістю)": {
+                        "account_number": "2822",
+                        "account_type": "Stock"
+                    }
+                },
+                "Товари на комісії": {
+                    "account_number": "283",
+                    "account_type": "Stock"
+                },
+                "Тара під товарами": {
+                    "account_number": "284",
+                    "account_type": "Stock"
+                },
+                "Торгова націнка": {
+                    "is_group": 1,
+                    "account_number": "285",
+                    "Торгова націнка в автоматизованих торговельних точках": {
+                        "account_number": "2851",
+                        "account_type": "Income Account"
+                    },
+                    "Торгова націнка в неавтоматизованих торговельних точках": {
+                        "account_number": "2852",
+                        "account_type": "Income Account"
+
+                    }
+                },
+                "Необоротні активи та групи вибуття, утримувані для продажу": {
+                    "account_number": "286"
+                },
+                "Товари в торгівлі (за покупною вартістю)": {
+                    "account_number": "289",
+                    "account_type": "Stock"
+                }
+            }
+        },
+        "Кошти, розрахунки та інші активи": {
+            "is_group": 1,
+            "account_number": "3",
+            "root_type": "Asset",
+            "Готівка": {
+                "is_group": 1,
+                "account_number": "30",
+                "Готівка в національній валюті": {
+                    "account_number": "301",
+                    "account_type": "Cash"
+                },
+                "Готівка в іноземній валюті": {
+                    "account_number": "302",
+                    "account_type": "Cash"
+                }
+            },
+            "Рахунки в банках": {
+                "is_group": 1,
+                "account_number": "31",
+                "Поточні рахунки в національній валюті": {
+                    "account_number": "311",
+                    "account_type": "Bank"
+                },
+                "Поточні рахунки в іноземній валюті": {
+                    "account_number": "312",
+                    "account_type": "Bank"
+                },
+                "Інші рахунки в банку в національній валюті": {
+                    "account_number": "313",
+                    "account_type": "Bank"
+                },
+                "Інші рахунки в банку в іноземній валюті": {
+                    "account_number": "314",
+                    "account_type": "Bank"
+                },
+                "Спеціальні рахунки в національній валюті": {
+                    "account_number": "315",
+                    "account_type": "Bank"
+                },
+                "Спеціальні рахунки в іноземній валюті": {
+                    "account_number": "316",
+                    "account_type": "Bank"
+                }
+            },
+            "Інші кошти": {
+                "is_group": 1,
+                "account_number": "33",
+                "Грошові документи в національній валюті": {
+                    "account_number": "331",
+                    "account_type": "Equity"
+                },
+                "Грошові документи в іноземній валюті": {
+                    "account_number": "332",
+                    "account_type": "Equity"
+                },
+                "Грошові кошти в дорозі в національній валюті": {
+                    "account_number": "333",
+                    "account_type": "Equity"
+                },
+                "Грошові кошти в дорозі в іноземній валюті": {
+                    "account_number": "334",
+                    "account_type": "Equity"
+                },
+                "Електронні гроші, номіновані в національній валюті": {
+                    "account_number": "335",
+                    "account_type": "Equity"
+                }
+            },
+            "Короткострокові векселі одержані": {
+                "is_group": 1,
+                "account_number": "34",
+                "Короткострокові векселі, одержані в національній валюті": {
+                    "account_number": "341",
+                    "account_type": "Equity"
+                },
+                "Короткострокові векселі, одержані в іноземній валюті": {
+                    "account_number": "342",
+                    "account_type": "Equity"
+                }
+            },
+            "Поточні фінансові інвестиції": {
+                "is_group": 1,
+                "account_number": "35",
+                "Еквіваленти грошових коштів": {
+                    "is_group": 1,
+                    "account_number": "351",
+                    "Еквіваленти грошових коштів (у національній валюті)": {
+                        "account_number": "3511"
+                    },
+                    "Еквіваленти грошових коштів (в іноземній валюті)": {
+                        "account_number": "3512"
+                    },
+                    "account_type": "Equity"
+                },
+                "Інші поточні фінансові інвестиції": {
+                    "account_number": "352",
+                    "account_type": "Equity"
+                }
+            },
+            "Розрахунки з покупцями та замовниками": {
+                "is_group": 1,
+                "account_number": "36",
+                "Розрахунки з вітчизняними покупцями": {
+                    "account_number": "361",
+                    "account_type": "Receivable"
+
+                },
+                "Розрахунки з іноземними покупцями": {
+                    "account_number": "362",
+                    "account_type": "Receivable"
+
+                },
+                "Розрахунки з учасниками ПФГ": {
+                    "account_number": "363",
+                    "account_type": "Receivable"
+
+                },
+                "Розрахунки за гарантійним забезпеченням": {
+                    "account_number": "364",
+                    "account_type": "Receivable"
+                }
+            },
+            "Інші короткострокові зобов`язання": {
+                "is_group": 1,
+                "account_number": "37",
+
+                "Розрахунки за виданими авансами": {
+                    "is_group": 1,
+                    "account_number": "371",
+                    "Розрахунки за виданими авансами (в національній валюті)": {
+                        "account_number": "3711",
+                        "account_type": "Receivable"
+
+                    },
+                    "Розрахунки за виданими авансами (в іноземній валюті)": {
+                        "account_number": "3712",
+                        "account_type": "Receivable"
+                    }
+                },
+                "Розрахунки з підзвітними особами": {
+                    "is_group": 1,
+                    "account_number": "372",
+                    "Розрахунки з підзвітними особами в національній валюті": {
+                        "account_number": "3721",
+                        "account_type": "Receivable"
+                    },
+                    "Розрахунки з підзвітними особами в іноземній валюті": {
+                        "account_number": "3722",
+                        "account_type": "Receivable"
+                    }
+                },
+                "Розрахунки за нарахованими доходами": {
+                    "account_number": "373",
+                    "account_type": "Receivable"
+                },
+                "Розрахунки за претензіями": {
+                    "account_number": "374",
+                    "account_type": "Receivable"
+                },
+                "Розрахунки за відшкодуванням завданих збитків": {
+                    "account_number": "375",
+                    "account_type": "Receivable"
+                },
+                "Розрахунки за позиками членам кредитних спілок": {
+                    "account_number": "376",
+                    "account_type": "Receivable"
+                },
+                "Розрахунки з іншими дебіторами": {
+                    "is_group": 1,
+                    "account_number": "377",
+                    "Розрахунки з іншими дебіторами (в національній валюті)": {
+                        "account_number": "3771",
+                        "account_type": "Receivable"
+                    },
+                    "Розрахунки з іншими дебіторами (в іноземній валюті)": {
+                        "account_number": "3772",
+                        "account_type": "Receivable"
+                    }
+                },
+                "Розрахунки з державними цільовими фондами": {
+                    "account_number": "378",
+                    "account_type": "Receivable"
+                },
+                "Розрахунки за операціями з деривативами": {
+                    "account_number": "379",
+                    "account_type": "Receivable"
+                }
+            },
+            "Резерв сумнівних боргів": {
+                "is_group": 1,
+                "account_number": "38",
+                "root_type": "Liability",
+                "По заборгованості за товари, роботи, послуги": {
+                    "account_number": "381",
+                    "account_type": "Receivable"
+                },
+                "По заборгованості за розрахунки з бюджетом": {
+                    "account_number": "382",
+                    "account_type": "Receivable"
+                },
+                "По заборгованості за розрахунки за виданими авансами": {
+                    "account_number": "383",
+                    "account_type": "Receivable"
+                },
+                "По заборгованості за розрахунки за нарахованими доходами": {
+                    "account_number": "384",
+                    "account_type": "Receivable"
+                },
+                "По заборгованості за внутрішні розрахунки": {
+                    "account_number": "385",
+                    "account_type": "Receivable"
+                },
+                "По іншій дебіторській заборгованості": {
+                    "account_number": "386",
+                    "account_type": "Receivable"
+                }
+            },
+            "Витрати майбутніх періодів": {
+                "account_number": "39",
+                "account_type": "Receivable"
+            }
+        },
+        "Власний капітал та забезпечення зобов`язань": {
+            "is_group": 1,
+            "account_number": "4",
+            "root_type": "Liability",
+            "Зареєстрований (пайовий) капітал": {
+                "is_group": 1,
+                "account_number": "40",
+                "Статутний капітал": {
+                    "account_number": "401",
+                    "account_type": "Equity"
+                },
+                "Пайовий капітал": {
+                    "account_number": "402",
+                    "account_type": "Equity"
+                },
+                "Інший зареєстрований капітал": {
+                    "account_number": "403",
+                    "account_type": "Equity"
+                },
+                "Внески до незареєстрованого статутного капіталу": {
+                    "account_number": "404",
+                    "account_type": "Equity"
+                }
+            },
+            "Капітал у дооцінках": {
+                "is_group": 1,
+                "account_number": "41",
+                "account_type": "Fixed Asset",
+                "Дооцінка (уцінка) основних засобів": {
+                    "account_number": "411",
+                    "account_type": "Fixed Asset"
+                },
+                "Дооцінка (уцінка) нематеріальних активів": {
+                    "account_number": "412",
+                    "account_type": "Fixed Asset"
+                },
+                "Дооцінка (уцінка) фінансових інструментів": {
+                    "account_number": "413",
+                    "account_type": "Fixed Asset"
+                },
+                "Інший капітал у дооцінках": {
+                    "account_number": "414",
+                    "account_type": "Fixed Asset"
+                }
+            },
+            "Додатковий капітал": {
+                "is_group": 1,
+                "account_number": "42",
+                "Емісійний дохід": {
+                    "account_number": "421",
+                    "account_type": "Equity"
+                },
+                "Інший вкладений капітал": {
+                    "account_number": "422",
+                    "account_type": "Equity"
+                },
+                "Накопичені курсові різниці": {
+                    "account_number": "423",
+                    "account_type":"Asset Received But Not Billed"
+                },
+                "Безоплатно одержані необоротні активи": {
+                    "account_number": "424",
+                    "account_type": "Asset Received But Not Billed"
+                },
+                "Інший додатковий капітал": {
+                    "account_number": "425",
+                    "account_type": "Equity"
+                }
+            },
+            "Резервний капітал": {
+                "account_number": "43",
+                "account_type": "Equity"
+            },
+            "Нерозподілені прибутки (непокриті збитки)": {
+                "is_group": 1,
+                "account_number": "44",
+                "Прибуток нерозподілений": {
+                    "account_number": "441"
+                },
+                "Непокриті збитки": {
+                    "account_number": "442"
+                },
+                "Прибуток, використаний у звітному періоді": {
+                    "account_number": "443"
+                }
+            },
+            "Вилучений капітал": {
+                "is_group": 1,
+                "account_number": "45",
+                "Вилучені акції": {
+                    "account_number": "451",
+                    "account_type": "Equity"
+                },
+                "Вилучені вклади й паї": {
+                    "account_number": "452",
+                    "account_type": "Equity"
+                },
+                "Інший вилучений капітал": {
+                    "account_number": "453",
+                    "account_type": "Equity"
+                }
+            },
+            "Неоплачений капітал": {
+                "account_number": "46",
+                "account_type": "Equity"
+            },
+            "Забезпечення майбутніх витрат і платежів": {
+                "is_group": 1,
+                "account_number": "47",
+                "Забезпечення виплат відпусток": {
+                    "account_number": "471",
+                    "account_type": "Expense Account"
+                },
+                "Додаткове пенсійне забезпечення": {
+                    "account_number": "472",
+                    "account_type": "Expense Account"
+                },
+                "Забезпечення гарантійних зобов`язань": {
+                    "account_number": "473",
+                    "account_type": "Expense Account"
+                },
+                "Забезпечення інших витрат і платежів": {
+                    "account_number": "474",
+                    "account_type": "Expense Account"
+                },
+                "Забезпечення, пов`язане з інвестиційною діяльністю": {
+                    "account_number": "475",
+                    "account_type": "Expense Account"
+                },
+                "Забезпечення, пов`язане з фінансовою діяльністю": {
+                    "account_number": "476",
+                    "account_type": "Expense Account"
+                },
+                "Забезпечення матеріального заохочення": {
+                    "account_number": "477",
+                    "account_type": "Expense Account"
+                },
+                "Забезпечення відновлення земельних ділянок": {
+                    "account_number": "478",
+                    "account_type": "Expense Account"
+                }
+            },
+            "Цільове фінансування і цільові надходження": {
+                "is_group": 1,
+                "account_number": "48",
+                "Кошти, вивільнені від оподаткування": {
+                    "account_number": "481"
+                },
+                "Кошти з бюджету та державних цільових фондів": {
+                    "account_number": "482"
+                },
+                "Благодійна допомога": {
+                    "account_number": "483"
+                },
+                "Інші кошти цільового фінансування і цільових надходжень": {
+                    "account_number": "484"
+                }
+            },
+            "Страхові резерви": {
+                "is_group": 1,
+                "account_number": "49",
+                "Технічні резерви": {
+                    "account_number": "491"
+                },
+                "Резерви із страхування життя": {
+                    "account_number": "492"
+                },
+                "Частка перестраховиків у технічних резервах": {
+                    "account_number": "493"
+                },
+                "Частка перестраховиків у резервах із страхування життя": {
+                    "account_number": "494"
+                },
+                "Результат зміни технічних резервів": {
+                    "account_number": "495"
+                },
+                "Результат зміни резервів із страхування життя": {
+                    "account_number": "496"
+                }
+            }
+        },
+        "Довгострокові зобов`язання": {
+            "is_group": 1,
+            "account_number": "5",
+            "root_type": "Liability",
+            "Довгострокові позики": {
+                "is_group": 1,
+                "account_number": "50",
+                "Довгострокові кредити банків у національній валюті": {
+                    "account_number": "501"
+                },
+                "Довгострокові кредити банків в іноземній валюті": {
+                    "account_number": "502"
+                },
+                "Відстрочені довгострокові кредити банків у національній валюті": {
+                    "account_number": "503"
+                },
+                "Відстрочені довгострокові кредити банків в іноземній валюті": {
+                    "account_number": "504"
+                },
+                "Інші довгострокові позики в національній валюті": {
+                    "account_number": "505"
+                },
+                "Інші довгострокові позики в іноземній валюті": {
+                    "account_number": "506"
+                }
+            },
+            "Довгострокові векселі видані": {
+                "is_group": 1,
+                "account_number": "51",
+                "Довгострокові векселі, видані в національній валюті": {
+                    "account_number": "511",
+                    "account_type": "Equity"
+                },
+                "Довгострокові векселі, видані в іноземній валюті": {
+                    "account_number": "512",
+                    "account_type": "Equity"
+                }
+            },
+            "Довгострокові зобов`язання за облігаціями": {
+                "is_group": 1,
+                "account_number": "52",
+                "Зобов’язання за облігаціями": {
+                    "account_number": "521",
+                    "account_type": "Equity"
+                },
+                "Премія за випущеними облігаціями": {
+                    "account_number": "522",
+                    "account_type": "Income Account"
+                },
+                "Дисконт за випущеними облігаціями": {
+                    "account_number": "523",
+                    "account_type": "Equity"
+                }
+            },
+            "Довгострокові зобов`язання з оренди": {
+                "is_group": 1,
+                "account_number": "53",
+                "Зобов`язання з фінансової оренди": {
+                    "account_number": "531",
+                    "account_type": "Expense Account"
+                },
+                "Зобов`язання з оренди цілісних майнових комплексів": {
+                    "account_number": "532",
+                    "account_type": "Expense Account"
+                }
+            },
+            "Відстрочені податкові зобов`язання": {
+                "account_number": "54",
+                "account_type": "Tax"
+            },
+            "Інші довгострокові зобов`язання": {
+                "is_group": 1,
+                "account_number": "55",
+                "Інші довгострокові зобов`язання, що включають різні типи зобов`язань, не класифіковані в інших категоріях": {
+                    "account_number": "551"
+                }
+            }
+        },
+        "Поточні зобов`язання": {
+            "is_group": 1,
+            "account_number": "6",
+            "root_type": "Liability",
+            "Короткострокові позики": {
+                "is_group": 1,
+                "account_number": "60",
+                "Короткострокові кредити банків у національній валюті": {
+                    "account_number": "601"
+                },
+                "Короткострокові кредити банків в іноземній валюті": {
+                    "account_number": "602"
+                },
+                "Відстрочені короткострокові кредити банків у національній валюті": {
+                    "account_number": "603"
+                },
+                "Відстрочені короткострокові кредити банків в іноземній валюті": {
+                    "account_number": "604"
+                },
+                "Прострочені позики в національній валюті": {
+                    "account_number": "605"
+                },
+                "Прострочені позики в іноземній валюті": {
+                    "account_number": "606"
+                }
+            },
+            "Поточна заборгованість за довгостроковими зобов`язаннями": {
+                "is_group": 1,
+                "account_number": "61",
+                "Поточна заборгованість за довгостроковими зобов`язаннями в національній валюті": {
+                    "account_number": "611"
+                },
+                "Поточна заборгованість за довгостроковими зобов`язаннями в іноземній валюті": {
+                    "account_number": "612"
+                }
+            },
+            "Короткострокові векселі видані": {
+                "is_group": 1,
+                "account_number": "62",
+                "Короткострокові векселі, видані в національній валюті": {
+                    "account_number": "621",
+                    "account_type": "Equity"
+                },
+                "Короткострокові векселі, видані в іноземній валюті": {
+                    "account_number": "622",
+                    "account_type": "Equity"
+                }
+            },
+            "Розрахунки з постачальниками та підрядниками": {
+                "is_group": 1,
+                "account_number": "63",
+                "Розрахунки з вітчизняними постачальниками": {
+                    "account_number": "631",
+                    "account_type": "Payable"
+                },
+                "Розрахунки з іноземними постачальниками": {
+                    "account_number": "632",
+                    "account_type": "Payable"
+                },
+                "Розрахунки з учасниками ПФГ": {
+                    "account_number": "633",
+                    "account_type": "Payable"
+                }
+            },
+            "Розрахунки за податками та платежами": {
+                "is_group": 1,
+                "account_number": "64",
+                "Розрахунки за податками": {
+                    "is_group": 1,
+                    "account_number": "641",
+                    "Розрахунки за ПДФО": {
+                        "account_number": "6411",
+                        "account_type": "Tax"
+                    },
+                    "Розрахунки за ПДВ": {
+                        "account_number": "6412",
+                        "account_type": "Tax"
+                    },
+                    "Розрахунки за податком на прибуток": {
+                        "account_number": "6413",
+                        "account_type": "Tax"
+                    },
+                    "Розрахунки за єдиним податком": {
+                        "account_number": "6414",
+                        "account_type": "Tax"
+                    },
+                    "Розрахунки за іншими податками": {
+                        "account_number": "6415",
+                        "account_type": "Tax"
+                    },
+                    "Розрахунки за акцизом": {
+                        "account_number": "6416",
+                        "account_type": "Tax"
+                    }
+                },
+                "Розрахунки по обов`язкових платежах": {
+                    "account_number": "642",
+                    "account_type": "Payable"
+                },
+                "Податкові зобов`язання": {
+                    "is_group": 1,
+                    "account_number": "643",
+                    "Податкові зобов`язання": {
+                        "account_number": "6431",
+                        "Податкові зобов`язання непідтверджені": {
+                            "account_number": "6432",
+                            "account_type": "Tax"
+                        },
+                        "Коригування податкових зобов`язань": {
+                            "account_number": "6433",
+                            "account_type": "Tax"
+                        },
+                        "Податкові зобов`язання (роздріб)": {
+                            "account_number": "6434",
+                            "account_type": "Tax"
+                        },
+                        "Умовний продаж": {
+                            "account_number": "6435"
+                        }
+                    }
+                },
+                "Податковий кредит": {
+                    "is_group": 1,
+                    "account_number": "644",
+                    "Податковий кредит": {
+                        "account_number": "6441",
+                        "Податковий кредит непідтверджений": {
+                            "account_number": "6442"
+                        },
+                        "Коригування податкового кредиту": {
+                            "account_number": "6443"
+                        }
+                    }
+                }
+            },
+            "Розрахунки за страхуванням": {
+                "is_group": 1,
+                "account_number": "65",
+                "За розрахунками із загальнообов`язкового державного соціального страхування": {
+                    "account_number": "651",
+                    "account_type": "Payable"
+                },
+                "За соціальним страхуванням": {
+                    "account_number": "652",
+                    "account_type": "Payable"
+                },
+                "За страхуванням на випадок безробіття": {
+                    "account_number": "653",
+                    "account_type": "Payable"
+                },
+                "За індивідуальним страхуванням": {
+                    "account_number": "654",
+                    "account_type": "Payable"
+                },
+                "За страхуванням майна": {
+                    "account_number": "655",
+                    "account_type": "Payable"
+                },
+                "За страхуванням від нещасних випадків": {
+                    "account_number": "656",
+                    "account_type": "Payable"
+                }
+            },
+            "Розрахунки за виплатами працівникам": {
+                "is_group": 1,
+                "account_number": "66",
+                "Розрахунки за заробітною платою": {
+                    "account_number": "661",
+                    "account_type": "Payable"
+                },
+                "Розрахунки з депонентами": {
+                    "account_number": "662",
+                    "account_type": "Payable"
+                },
+                "Розрахунки за іншими виплатами": {
+                    "account_number": "663",
+                    "account_type": "Payable"
+                }
+            },
+            "Розрахунки з учасниками": {
+                "is_group": 1,
+                "account_number": "67",
+                "Розрахунки за нарахованими дивідендами": {
+                    "account_number": "671",
+                    "account_type": "Payable"
+                },
+                "Розрахунки за іншими виплатами": {
+                    "account_number": "672",
+                    "account_type": "Payable"
+                }
+            },
+            "Розрахунки за іншими операціями": {
+                "is_group": 1,
+                "account_number": "68",
+                "Розрахунки, пов`язані з необоротними активами та групами вибуття, утримуваними для продажу": {
+                    "account_number": "680",
+                    "account_type": "Expenses Included In Asset Valuation"
+                },
+                "Розрахунки за авансами одержаними": {
+                    "is_group": 1,
+                    "account_number": "681",
+                    "Розрахунки за авансами одержаними в національній валюті": {
+                        "account_number": "6811",
+                        "account_type": "Payable"
+                    },
+                    "Розрахунки за авансами одержаними в іноземній валюті": {
+                        "account_number": "6812",
+                        "account_type": "Payable"
+                    }
+                },
+                "Внутрішні розрахунки": {
+                    "account_number": "682",
+                    "account_type": "Payable"
+                },
+                "Внутрішньогосподарські розрахунки": {
+                    "account_number": "683",
+                    "account_type": "Payable"
+                },
+                "Розрахунки за нарахованими відсотками": {
+                    "account_number": "684",
+                    "account_type": "Payable"
+                },
+                "Розрахунки з іншими кредиторами": {
+                    "is_group": 1,
+                    "account_number": "685",
+                    "Розрахунки з іншими кредиторами (в національній валюті)": {
+                        "account_number": "6851",
+                        "account_type": "Payable"
+                    },
+                    "Розрахунки з іншими кредиторами (в іноземній валюті)": {
+                        "account_number": "6852",
+                        "account_type": "Payable"
+                    }
+                }
+            },
+            "Доходи майбутніх періодів": {
+                "account_number": "69"
+            }
+        },
+        "Доходи і результати діяльності": {
+            "is_group": 1,
+            "account_number": 7,
+            "root_type": "Income",
+            "Доходи від реалізації": {
+                "account_number": "70",
+                "Дохід від реалізації готової продукції": {
+                    "account_number": "701",
+                    "account_type": "Receivable"
+                },
+                "Дохід від реалізації товарів": {
+                    "account_number": "702",
+                    "account_type": "Receivable"
+                },
+                "Дохід від реалізації робіт і послуг": {
+                    "account_number": "703",
+                    "account_type": "Receivable"
+                },
+                "Вирахування з доходу": {
+                    "account_number": "704"
+                },
+                "Перестрахування": {
+                    "account_number": "705"
+                },
+                "Дохід від реалізації в роздріб": {
+                    "account_number": "709",
+                    "Дохід від роздрібного продажу": {
+                        "account_number": "7091",
+                        "account_type": "Receivable"
+                    },
+                    "Вирахування з доходу від роздрібного продажу": {
+                        "account_number": "7092"
+                    }
+                }
+            },
+            "Інший операційний дохід": {
+                "account_number": "71",
+                "is_group": 1,
+                "Дохід від первісного визнання та від зміни вартості активів": {
+                    "account_number": "710",
+                    "account_type": "Income Account"
+                },
+                "Дохід від купівлі-продажу іноземної валюти": {
+                    "account_number": "711",
+                    "account_type": "Receivable"
+                },
+                "Дохід від реалізації інших оборотних активів": {
+                    "account_number": "712",
+                    "account_type": "Receivable"
+                },
+                "Дохід від оренди": {
+                    "account_number": "713",
+                    "account_type": "Receivable"
+                },
+                "Дохід від штрафів і пені": {
+                    "account_number": "714",
+                    "account_type": "Receivable"
+                },
+                "Дохід від відшкодування збитків": {
+                    "account_number": "715",
+                    "account_type": "Receivable"
+                },
+                "Дохід від страхових виплат": {
+                    "account_number": "716",
+                    "account_type": "Receivable"
+                },
+                "Дохід від ліквідації об`єктів": {
+                    "account_number": "717",
+                    "account_type": "Receivable"
+                },
+                "Дохід від переоцінки активів": {
+                    "account_number": "718",
+                    "account_type": "Receivable"
+                },
+                "Дохід від субсидій, грантів": {
+                    "account_number": "719",
+                    "account_type": "Receivable"
+                }
+            },
+            "Дохід від участі в капіталі": {
+                "account_number": "72",
+                "is_group": 1,
+                "Дохід від інвестицій в асоційовані підприємства": {
+                    "account_number": "721",
+                    "account_type": "Receivable"
+                },
+                "Дохід від спільної діяльності": {
+                    "account_number": "722",
+                    "account_type": "Receivable"
+                },
+                "Дохід від інвестицій в дочірні підприємства": {
+                    "account_number": "723",
+                    "account_type": "Receivable"
+                }
+            },
+            "Інші фінансові доходи": {
+                "account_number": "73",
+                "is_group": 1,
+                "Дивіденди одержані": {
+                    "account_number": "731",
+                    "account_type": "Receivable"
+                },
+                "Відсотки одержані": {
+                    "account_number": "732",
+                    "account_type": "Receivable"
+                },
+                "Інші доходи від фінансових операцій": {
+                    "account_number": "733",
+                    "account_type": "Receivable"
+                }
+            },
+            "Інші доходи": {
+                "account_number": "74",
+                "is_group": 1,
+                "Дохід від зміни вартості фінансових інструментів": {
+                    "account_number": "740",
+                    "account_type": "Receivable"
+                },
+                "Дохід від реалізації фінансових інвестицій": {
+                    "account_number": "741",
+                    "account_type": "Receivable"
+                },
+                "Дохід від відновлення корисності активів": {
+                    "account_number": "742",
+                    "account_type": "Receivable"
+                },
+                "Дохід від неопераційної курсової різниці": {
+                    "account_number": "744",
+                    "account_type": "Receivable"
+                },
+                "Дохід від безоплатно одержаних активів": {
+                    "account_number": "745",
+                    "account_type": "Receivable"
+                },
+                "Інші доходи": {
+                    "account_number": "746",
+                    "account_type": "Receivable"
+                }
+            },
+            "Страхові платежі": {
+
+                "account_number": "76",
+                "account_type": "Receivable"
+            },
+            "Фінансові результати": {
+                "is_group": 1,
+                "account_number": "79",
+                "Результат операційної діяльності": {
+
+                    "account_number": "791",
+                    "account_type": "Income Account"
+                },
+                "Результат фінансових операцій": {
+                    "account_number": "792",
+                    "account_type": "Income Account"
+                },
+                "Результат іншої звичайної діяльності": {
+                    "account_number": "793",
+                    "account_type": "Income Account"
+                }
+            }
+        },
+        "Витрати за елементами": {
+            "is_group": 1,
+            "account_number": "8",
+            "root_type": "Expense",
+            "Матеріальні витрати": {
+                "is_group": 1,
+                "account_number": "80",
+                "Витрати сировини й матеріалів": {
+
+                    "account_number": "801",
+                    "account_type": "Expense Account"
+                },
+                "Витрати купівельних напівфабрикатів та комплектуючих виробів": {
+
+                    "account_number": "802",
+                    "account_type": "Expense Account"
+                },
+                "Витрати палива й енергії": {
+
+                    "account_number": "803",
+                    "account_type": "Expense Account"
+                },
+                "Витрати тари й тарних матеріалів": {
+
+                    "account_number": "804",
+                    "account_type": "Expense Account"
+                },
+                "Витрати будівельних матеріалів": {
+
+                    "account_number": "805",
+                    "account_type": "Expense Account"
+                },
+                "Витрати запасних частин": {
+
+                    "account_number": "806",
+                    "account_type": "Expense Account"
+                },
+                "Витрати матеріалів сільськогосподарського призначення": {
+
+                    "account_number": "807",
+                    "account_type": "Expense Account"
+                }
+            },
+            "Витрати на оплату праці": {
+                "is_group": 1,
+                "account_number": "81",
+                "Виплати за окладами й тарифами": {
+
+                    "account_number": "811",
+                    "account_type": "Payable"
+                },
+                "Премії та заохочення": {
+
+                    "account_number": "812",
+                    "account_type": "Payable"
+                },
+                "Компенсаційні виплати": {
+
+                    "account_number": "813",
+                    "account_type": "Payable"
+                },
+                "Оплата відпусток": {
+
+                    "account_number": "814",
+                    "account_type": "Payable"
+                },
+                "Оплата іншого невідпрацьованого часу": {
+
+                    "account_number": "815",
+                    "account_type": "Payable"
+                },
+                "Інші витрати на оплату праці": {
+
+                    "account_number": "816",
+                    "account_type": "Payable"
+                }
+            },
+            "Відрахування на соціальні заходи": {
+                "is_group": 1,
+                "account_number": "82",
+                "Відрахування на загальнообов'язкове державне соціальне страхування": {
+
+                    "account_number": "821",
+                    "account_type": "Payable"
+                },
+                "Відрахування на індивідуальне страхування": {
+
+                    "account_number": "824",
+                    "account_type": "Payable"
+                }
+            },
+            "Амортизація": {
+                "is_group": 1,
+                "account_number": "83",
+                "Амортизація основних засобів": {
+
+                    "account_number": "831",
+                    "account_type": "Depreciation"
+                },
+                "Амортизація інших необоротних матеріальних активів": {
+
+                    "account_number": "832",
+                    "account_type": "Depreciation"
+                },
+                "Амортизація нематеріальних активів": {
+
+                    "account_number": "833",
+                    "account_type": "Depreciation"
+                }
+            },
+            "Інші операційні витрати": {
+
+                "account_number": "84",
+                "account_type": "Depreciation"
+            },
+            "Інші витрати": {
+                "is_group": 1,
+                "account_number": "85",
+                "Інші затрати за елементами, податок на прибуток": {
+
+                    "account_number": "851",
+                    "account_type": "Tax"
+                },
+                "Інші затрати за елементами, надзвичайні затрати": {
+
+                    "account_number": "852",
+                    "account_type": "Payable"
+                }
+            }
+        },
+        "Витрати діяльності": {
+            "is_group": 1,
+            "account_number": "9",
+            "root_type": "Expense",
+            "Собівартість реалізації": {
+                "is_group": 1,
+                "account_number": "90",
+                "account_type": "Cost of Goods Sold",
+                "Собівартість реалізованої готової продукції": {
+
+                    "account_number": "901",
+                    "account_type": "Cost of Goods Sold"
+                },
+                "Собівартість реалізованих товарів": {
+
+                    "account_number": "902",
+                    "account_type": "Cost of Goods Sold"
+                },
+                "Собівартість реалізованих робіт і послуг": {
+
+                    "account_number": "903",
+                    "account_type": "Cost of Goods Sold"
+                },
+                "Страхові виплати": {
+                    "account_number": "904",
+                    "account_type": "Cost of Goods Sold"
+                }
+            },
+            "Загальновиробничі витрати": {
+
+                "account_number": "91",
+                "account_type": "Expense Account"
+            },
+            "Адміністративні витрати": {
+
+                "account_number": "92",
+                "account_type": "Expense Account"
+            },
+            "Витрати на збут": {
+
+                "account_number": "93",
+                "account_type": "Cost of Goods Sold"
+            },
+            "Інші витрати операційної діяльності": {
+                "is_group": 1,
+                "account_number": "94",
+                "Витрати від первісного визнання та від зміни вартості активів, які обліковуються за справедливою вартістю": {
+
+                    "account_number": "940",
+                    "account_type": "Expense Account"
+                },
+                "Витрати на дослідження і розробки": {
+
+                    "account_number": "941",
+                    "account_type": "Expense Account"
+                },
+                "Витрати на купівлю-продаж іноземної валюти": {
+
+                    "account_number": "942",
+                    "account_type": "Expense Account"
+                },
+                "Собівартість реалізованих виробничих запасів": {
+
+                    "account_number": "943",
+                    "account_type": "Cost of Goods Sold"
+                },
+                "Сумнівні та безнадійні борги": {
+
+                    "account_number": "944",
+                    "account_type": "Expense Account"
+                },
+                "Втрати від операційної курсової різниці": {
+
+                    "account_number": "945",
+                    "account_type": "Expense Account"
+                },
+                "Втрати від знецінення запасів": {
+
+                    "account_number": "946",
+                    "account_type": "Depreciation"
+                },
+                "Нестачі і втрати від псування цінностей": {
+
+                    "account_number": "947",
+                    "account_type": "Depreciation"
+                },
+                "Визнані штрафи, пені, неустойки": {
+
+                    "account_number": "948",
+                    "account_type": "Expense Account"
+                },
+                "Інші витрати операційної діяльності": {
+
+                    "account_number": "949",
+                    "account_type": "Expense Account"
+                }
+            },
+            "Фінансові витрати": {
+                "is_group": 1,
+                "account_number": "95",
+                "Відсотки за кредит": {
+
+                    "account_number": "951",
+                    "account_type": "Payable"
+                },
+                "Інші фінансові витрати": {
+
+                    "account_number": "952",
+                    "account_type": "Payable"
+                }
+            },
+            "Податок на прибуток": {
+                "is_group": 1,
+                "account_number": "98",
+                "Податок на прибуток від усіх видів діяльності": {
+
+                    "account_number": "981",
+                    "account_type": "Tax"
+                }
+            }
+        }
+    }
+}
