@@ -1,517 +1,149 @@
-{% extends "templates/web.html" %}
+{% extends "templates/pages/website-base.html" %}
 
-{% from "erpnext/templates/includes/macros.html" import render_homepage_section %}
+{% block body_class %}home{% endblock %}
 
 {% block content %}
-	<main>
-    <section id="main-slider" class="no-margin">
-        <div class="carousel slide wet-asphalt">
-            <ol class="carousel-indicators">
-                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#main-slider" data-slide-to="1"></li>
-                <li data-target="#main-slider" data-slide-to="2"></li>
-                <li data-target="#main-slider" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item active " style="background-image: url(/files/c_images/slider/web.jpg)">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="c-carousel-content center centered">
-                                    <h2 class="boxed animation animated-item-1">Powerful and Responsive Web Development</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/.item-->
-                <div class="item " style="background-image: url(/files/c_images/slider/mobile.jpg)">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="c-carousel-content center centered">
-                                    <h2 class="boxed animation animated-item-1">Mobile Development</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/.item-->
-                <div class="item " style="background-image: url(/files/c_images/slider/consulting2.jpg)">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="c-carousel-content center centered">
-                                    <h2 class="boxed animation animated-item-1">IT Consulting</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item " style="background-image: url(/files/c_images/slider/hosting.jpg); ">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="c-carousel-content center centered">
-                                    <h2 class="boxed animation animated-item-1">Hosting</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-            </div><!--/.carousel-inner-->
-        </div><!--/.carousel-->
-        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
-            <i class="icon-angle-left"></i>
-        </a>
-        <a class="next hidden-xs" href="#main-slider" data-slide="next">
-            <i class="icon-angle-right"></i>
-        </a>
-    </section><!--/#main-slider-->
-    <section id="services" class="emerald main-follow">
-        <!--<h2 class="text-center">Follow us:</h2>-->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                    <a href="https://twitter.com/IKROKinfo" target="_blank">
-                        <div class="media">
-                            <div class="">
-                                <!--<i class="icon-twitter icon-md"></i>-->
-                            </div>
-                            <div class="media-body">
-                                <h3 class="media-heading">Twitter</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div><!--/.col-md-4-->
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                    <a href="https://www.facebook.com/llcikrok?fref=ts" target="_blank">
-                        <div class="media">
-                            <div class="">
-                                <!--<i class="icon-facebook icon-md"></i>-->
-                            </div>
-                            <div class="media-body">
-                                <h3 class="media-heading">Facebook</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div><!--/.col-md-4-->
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                    <a href="https://www.linkedin.com/company/llc-ikrok?trk=nmp_rec_act_company_name" target="_blank">
-                        <div class="media">
-                            <div class="">
-                                <!--<i class="icon-linkedin icon-md"></i>-->
-                            </div>
-                            <div class="media-body">
-                                <h3 class="media-heading">Linkedin</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div><!--/.col-md-4-->
+<section class="hero">
+    <div class="hero-content"><h1 class="hero-title">Company <strong>SLife</strong></h1>
+        <div class="hero-text">
+            <p>We are a company that makes life better by combining two of the most important trends of our time:
+                longevity and robotics. Our mission is to help you live longer, healthier, and more conveniently
+                with
+                the help of advanced technologies.</p>
+        </div>
+        <div class="hero-buttons">
+            <a class="btn" href="./contact.html">Book a service</a>
+        </div>
+    </div>
+    <div class="social-links">
+        <a href="https://www.facebook.com/SLifeComany/"><img src="files/icon-facebook.svg" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/company/llc-slife/"><img src="files/icon-linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/slife_company/"><img src="files/icon-instagram.svg" alt="Instagram"></a>
+    </div>
+</section>
+
+<div class="content-switcher">
+    <div class="content-switch">
+        <button data-target="erpnext-content" class="active">ErpNext</button>
+        <button data-target="ai-content">AI</button>
+        <button data-target="vr-content">VR</button>
+    </div>
+
+
+    <div id="erpnext-content" class="content-section active">
+        <div class="content">
+            <img src="/files/Content_3.jpg" alt="Content" class="description-image">
+            <div class="description">
+                <p>ERPNext is an open-source ERP (Enterprise Resource Planning) system that helps automate various
+                    business processes such as accounting, inventory management, sales, purchasing, manufacturing,
+                    and
+                    more. It is designed for small and medium-sized enterprises and can be customized to meet
+                    specific
+                    user needs.</p>
             </div>
         </div>
-    </section><!--/#services-->
-    <section id="recent-works">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3">
-                    <h2><a target="_blank" href="/solutions">Our Latest Projects</a></h2>
-                    <br>
-                    <p style="font-size: 16px">View Other projects in <a target="_blank" href="/solutions" style="text-decoration: underline">Portfolio</a> </p>
-                    <br>
-                    <!-- <div class="btn-group">
-                        <a class="btn btn-danger" href="#scroller" data-slide="prev"><i class="icon-angle-left"></i></a>
-                        <a class="btn btn-danger" href="#scroller" data-slide="next"><i class="icon-angle-right"></i></a>
-                    </div> -->
-                    <p class="gap"></p>
-                </div>
-                <div class="col-md-9 col-sm-9">
-                    <div id="scroller" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="row">
-                                    <div class="col-sm-4 col-xs-12">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <img class="img-responsive" src="/files/c_images/portfolio/recent/intellinote.png" alt="">
-                                                <h5>
-                                                    Intellinote - Corporate Task Manager
-                                                </h5>
-                                                <!--<div class="overlay">-->
-                                                    <!--<div class="subsc">-->
-                                                        <!--<a href="https://www.intellinote.net/sign-up/" target="_blank">-->
-                                                            <!--Intellinote - Corporate Task Manager-->
-                                                        <!--</a>-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-12">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <img class="img-responsive" src="/files/c_images/portfolio/recent/gaspacho.png" alt="">
-                                                <h5>
-                                                    Gazpacho
-                                                </h5>
-                                                <div class="overlay">
-                                                    <div class="subsc">
-                                                        <a target="_blank" href="https://gazpacho.netalizer.com/gazpachoNG/#/login">
-                                                            Gazpacho
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-				                    <div class="col-sm-4 col-xs-12">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <img class="img-responsive" src="/files/c_images/portfolio/recent/inteneturok.png" alt="">
-                                                <h5>
-                                                    Repetition
-                                                </h5>
-                                                <div class="overlay">
-                                                    <div class="subsc">
-                                                        <a target="_blank" href="http://interneturok.ru/">
-                                                            Repetition
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--<div class="col-sm-4 col-xs-12">-->
-                                        <!--<div class="portfolio-item">-->
-                                            <!--<div class="item-inner">-->
-                                                <!--<img class="img-responsive" src="/files/c_images/portfolio/recent/volvo.png" alt="">-->
-                                                <!--<h5>-->
-                                                    <!--VCE-->
-                                                <!--</h5>-->
-                                                <!--<div class="overlay">-->
-                                                    <!--<div class="subsc">-->
-                                                        <!--<a href="http://store.volvotrucks.com" target="_blank">-->
-                                                            <!--VOLVO Internet Web-Shop-->
-                                                        <!--</a>-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->                                </div><!--/.row-->
-                            </div><!--/.item-->
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-sm-4 col-xs-12">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <img class="img-responsive" src="/files/c_images/portfolio/recent/vendezone2.png" alt="">
-                                                <h5>
-                                                    VendeZone
-                                                </h5>
-                                                <!--<div class="overlay">-->
-                                                    <!--<div class="subsc">-->
-                                                        <!--<a target="_blank" href="https://vendezone.com/home">-->
-                                                            <!--VendeZone-->
-                                                        <!--</a>-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-12">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <img class="img-responsive" src="/files/c_images/portfolio/recent/item1.png" alt="">
-                                                <h5>
-                                                    Ride Genie - On-line Taxi Service
-                                                </h5>
-                                                <!--<div class="overlay">-->
-                                                    <!--<div class="subsc">-->
-                                                        <!--<a target="_blank" href="https://play.google.com/store/apps/details?id=com.fti.ridegenie.passenger&hl=en">-->
-                                                            <!--Ride Genie-->
-                                                        <!--</a>-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-12">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <img class="img-responsive" src="/files/c_images/portfolio/recent/lock-us-now.png" alt="">
-                                                <h5>
-                                                    LockUsNow
-                                                </h5>
-                                                <!--<div class="overlay">-->
-                                                    <!--<div class="subsc">-->
-                                                        <!--<a target="_blank" href="https://www.lockusnow.com/login">-->
-                                                            <!--LockUsNow-->
-                                                        <!--</a>-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/.row-->
+    </div>
+
+    <div id="ai-content" class="content-section">
+        <div class="content">
+            <img src="/files/Content_1.jpg" alt="Content" class="description-image">
+            <div class="description">
+                <p>ERPNext is an open-source ERP (Enterprise Resource Planning) system that helps automate various
+                    business processes such as accounting, inventory management, sales, purchasing, manufacturing,
+                    and
+                    more. It is designed for small and medium-sized enterprises and can be customized to meet
+                    specific
+                    user needs.</p>
             </div>
         </div>
-    </section><!--/#recent-works-->
-    <section class="it-consult" style="background-color: #fff; padding:90px 0 50px 0">
-        <div class="container">
-            <div class="text-center">
-                <h2><a class="text-primary" href="consulting.html" target="_blank">IT Consulting</a></h2>
-                <br>
-                <p class="sub-text">We offer our customers to develop their own individual plan for the development of IT solutions for businesses, based on a detailed analysis of their needs.</p>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <blockquote>
-                        <p>Clarifying client's system specifications, understanding their work practices and the nature of their business.</p>
-                    </blockquote>
-                    <blockquote>
-                        <p>Preparing documentation and presenting progress reports to customers.</p>
-                    </blockquote>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <blockquote>
-                        <p>Analyzing IT requirements within companies and giving independent and objective advice on the use of IT.</p>
-                    </blockquote>
-                    <blockquote>
-                        <p>Strategic insights and recommendations to help clients capitalize on new opportunities.</p>
-                    </blockquote>
-                </div>
+    </div>
+
+    <div id="vr-content" class="content-section">
+        <div class="content">
+            <img src="/files/Content_2.jpg" alt="Content" class="description-image">
+            <div class="description">
+                <p>ERPNext is an open-source ERP (Enterprise Resource Planning) system that helps automate various
+                    business processes such as accounting, inventory management, sales, purchasing, manufacturing,
+                    and
+                    more. It is designed for small and medium-sized enterprises and can be customized to meet
+                    specific
+                    user needs.</p>
             </div>
         </div>
-    </section>
-    <section class="short-expertize" style=" padding:90px 0 50px 0">
-        <div class="container">
-            <div class="text-center">
-                <h2><a class="text-primary" target="_blank" href="expertise.html">Expertise</a></h2>
-                <br>
-                <p class="sub-text">Our focus is setting up and supporting dedicated software development teams for our customers.</p>
-                <br>
-                <br>
-            </div>
-            <div class="col-sm-12">
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="media">
-                            <div class="pull-left">
-                                <i class="icon-dribbble icon-md"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading sub-text">Web Development</h4>
-                                <p>Application development that has an unprecedented potential to enable developers to build rich interactive experiences, powered by vast data stores, that are available on any device.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="media">
-                            <div class="pull-left">
-                                <i class="icon-android icon-md"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading sub-text">Android Development</h4>
-                                <p>Android is the customizable, easy to use operating system that powers more than a billion devices across the globe — from phones and tablets to watches, TV, cars and more .</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="media">
-                            <div class="pull-left">
-                                <i class="icon-apple icon-md"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading sub-text">iOS Development</h4>
-                                <p>iOS is the world’s most advanced mobile operating system, continually redefining what people can do with a mobile device.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                </div>
+    </div>
+</div>
+
+<section class="directions">
+    <h2 class="heading underline">
+        <strong>OUR</strong> DIRECTIONS
+    </h2>
+    <div class="description">
+        <p>We create innovative solutions that transform the way you think about healthy and active longevity. Our
+            products combine advances in robotics and medicine to provide you with unique ways to maintain and
+            improve
+            your health.</p>
+    </div>
+    <div class="container">
+        <div class="block">
+            <h3 class="heading">
+                ROBO<strong>TICS</strong>
+            </h3>
+            <div class="content">
+                <p>Robotics is not just the future, it's the present. We create advanced robotic systems that make
+                    your
+                    life more convenient and safer. Our robotics solutions cover a wide range of tasks, from
+                    everyday
+                    household chores to ensuring safety and improving quality of life.</p>
             </div>
         </div>
-    </section>
-    <section class="hosting" style="background-color: #fff; padding:90px 0 50px 0">
-        <div class="container">
-            <div class="text-center">
-                <h2><a class="" href="hosting.html" target="_blank">Hosting</a></h2>
-                <br>
-                <p class="sub-text">We provide managed VPS hosting with 24/7 support. Basic managed support included for free!
-                    Full root access</p>
-                <br>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-4">
-                    <blockquote>
-                        <p >30 Days Money Back Guarantee.</p>
-
-                    </blockquote>
-                    <blockquote>
-                        <p class="">99.9% Uptime Guarantee.</p>
-                    </blockquote>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                    <blockquote>
-                        <p class="">Free Managed Support</p>
-                    </blockquote>
-                    <blockquote>
-                        <p class="">24/7 Support.</p>
-                    </blockquote>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                    <blockquote>
-                        <p class="">Multiple Services to fit any budget.</p>
-                    </blockquote>
-                    <blockquote>
-                        <p class="">SolusVM VPS Control Panel.</p>
-                    </blockquote>
-                </div>
+        <div class="block">
+            <h3 class="heading">
+                LONGE<strong>VITY</strong>
+            </h3>
+            <div class="content">
+                <p>We believe that everyone deserves to live a long and fulfilling life. Our longevity developments
+                    are
+                    designed to help you stay healthy, active and independent for many years to come.</p>
             </div>
         </div>
-    </section>
-    <!--<section id="bottom" class="wet-asphalt">-->
-    <!--    <div class="container">-->
-    <!--        <div class="row">-->
-    <!--            <div class="col-md-6 col-sm-6">-->
-    <!--                <h4 class="sub-text">About Us</h4>-->
-    <!--                <p>-->
-    <!--                    LLC IKROK - Ukrainian IT company, software manufacturer and service provider for the development, quality control and maintenance of information systems and business solutions.-->
-    <!--                </p>-->
-    <!--                <p> During our existence, we have gained the trust of many global companies, including well-known brands in the USA, Israel and Ukraine.</p>-->
-    <!--            </div>-->
-                
-    <!--            <div class="col-md-3 col-sm-6">-->
-    <!--            </div>-->
-    <!--            <div class="col-md-3 col-sm-6">-->
-    <!--                <h4 class="sub-text">Address</h4>-->
-    <!--                <address>-->
-    <!--                    <strong>LLC IKROK</strong><br>-->
-    <!--                    str. Lenskih Podij 46, office 74.,<br>-->
-    <!--                    Vinnitsya, Ukraine.<br>-->
-    <!--                    <abbr title="Phone">Phone:</abbr> +38(063) 778 74 94.<br>-->
-    <!--                    <abbr title="Email">Email:</abbr> info@ikrok.net-->
-    <!--                </address>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</section>-->
-    <!--<footer id="footer" class="midnight-blue">-->
-    <!--    <div class="container">-->
-    <!--        <div class="row">-->
-    <!--            <div class="col-sm-4">-->
-    <!--                &copy; 2015 <a target="_blank" href="http://ikrok.net/" title="LLC IKrok">LLC IKROK</a>. All Rights Reserved.-->
-    <!--            </div>-->
-    <!--            <div class="col-sm-8">-->
-    <!--                <ul class="pull-right">-->
-    <!--                    <li><a href="index.html">Home</a></li>-->
-    <!--                    <li><a href="about-us.html">About Us</a></li>-->
-    <!--                    <li><a href="expertise.html">Expertise</a></li>-->
-    <!--                    <li><a href="portfolio.html">Portfolio</a></li>-->
-    <!--                    <li><a href="consulting.html">Consulting</a></li>-->
-    <!--                    <li><a href="hosting.html">Hosting</a></li>-->
-    <!--                    <li><a href="career.html">Careers</a></li>-->
-    <!--                    <li><a href="contact-us.html">Contact</a></li>-->
-    <!--                    <li><a id="gototop" class="gototop" href="#"><i class="icon-chevron-up"></i></a></li>-->
-    <!--                </ul>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</footer>-->
-    <script src="/files/c_js/jquery.js"></script>
-    <script src="/files/c_js/jquery.isotope.min.js"></script>
-    <script src="/files/c_js/bootstrap.min.js"></script>
-    <script src="/files/c_js/jquery.prettyPhoto.js"></script>
-    <script src="/files/c_js/main.js"></script>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-51798542-1', 'crpi.ikrok.net');
-        ga('send', 'pageview');
-    </script>
+    </div>
+</section>
 
-	<!-- {% if homepage.hero_section_based_on == 'Default' %}
-	<section class="hero-section border-bottom {%if homepage.hero_image%}hero-image{%endif%}"
-		{% if homepage.hero_image %}
-		style="background-image: url('{{ homepage.hero_image }}');"
-		{%- endif %}
-	>
-		<div class="container py-5">
-			<h1 class="d-none d-sm-block display-4">{{ homepage.tag_line }}</h1>
-			<h1 class="d-block d-sm-none">{{ homepage.tag_line }}</h1>
-			<h2 class="d-none d-sm-block">{{ homepage.description }}</h2>
-			<h3 class="d-block d-sm-none">{{ homepage.description }}</h3>
-		</div>
+<section class="directions">
+    <h2 class="heading underline">
+        <strong>OUR</strong> DIRECTIONS
+    </h2>
+    <div class="description">
+        <p>We create innovative solutions that transform the way you think about healthy and active longevity. Our
+            products combine advances in robotics and medicine to provide you with unique ways to maintain and
+            improve
+            your health.</p>
+    </div>
+    <div class="container">
+        <div class="block">
+            <h3 class="heading">
+                ROBO<strong>TICS</strong>
+            </h3>
+            <div class="content">
+                <p>Robotics is not just the future, it's the present. We create advanced robotic systems that make
+                    your
+                    life more convenient and safer. Our robotics solutions cover a wide range of tasks, from
+                    everyday
+                    household chores to ensuring safety and improving quality of life.</p>
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="heading">
+                LONGE<strong>VITY</strong>
+            </h3>
+            <div class="content">
+                <p>We believe that everyone deserves to live a long and fulfilling life. Our longevity developments
+                    are
+                    designed to help you stay healthy, active and independent for many years to come.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-		<div class="container">
-			<a href="{{ explore_link }}" class="mb-5 btn btn-primary">{{ _('Explore') }}</a>
-		</div>
-	</section>
-	{% elif homepage.hero_section_based_on == 'Slideshow' and slideshow %}
-	<section class="hero-section">
-		{% include "templates/includes/slideshow.html" %}
-	</section>
-	{% elif homepage.hero_section_based_on == 'Homepage Section' %}
-		{{ render_homepage_section(homepage.hero_section_doc) }}
-	{% endif %} -->
-
-	<!-- {% if homepage.products %}
-	<section class="container section-products my-5">
-		<h3>{{ _('Products') }}</h3>
-
-		<div class="row">
-			{% for item in homepage.products %}
-			<div class="col-md-4 mb-4">
-				<div class="card h-100 justify-content-between">
-					<img class="card-img-top website-image-extra-large" src="{{ item.image }}" loading="lazy" alt="{{ item.item_name }}"></img>
-					<div class="card-body flex-grow-0">
-						<h5 class="card-title">{{ item.item_name }}</h5>
-						<a href="{{ item.route }}" class="card-link">{{ _('More details') }}</a>
-					</div>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-	</section>
-	{% endif %} -->
-
-	<!-- {% if blogs %}
-	<section class="container my-5">
-		<h3>{{ _('Publications') }}</h3>
-
-		<div class="row">
-			{% for blog in blogs %}
-			<div class="col-md-4 mb-4">
-				<div class="card h-100">
-					<div class="card-body">
-						<h5 class="card-title">{{ blog.title }}</h5>
-						<p class="card-subtitle mb-2 text-muted">{{ _('By {0}').format(blog.blogger) }}</p>
-						<p class="card-text">{{ blog.blog_intro }}</p>
-					</div>
-					<div class="card-body flex-grow-0">
-						<a href="{{ blog.route }}" class="card-link">{{ _('Read blog') }}</a>
-					</div>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-	</section>
-	{% endif %}
-
-	{% for section in homepage_sections %}
-		{{ render_homepage_section(section) }}
-	{% endfor %} -->
-</main>
 {% endblock %}

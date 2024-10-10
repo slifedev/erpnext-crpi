@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLife Company</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+
+<body class="{% block body_class %}{% endblock %}">
+
+<div class="wrapper y-scroll-snap">
+    <header class="header">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="files/Logo.svg" alt="Logo">
+            </div>
+            <div class="header-right">
+                <div class="language-switcher">
+                    <a class="lang active" href="/home">ENG</a>
+                    <a class="lang" href="/home-de">DE</a>
+                </div>
+                <!--                <div class="login">-->
+                <!--                    <a href="#">-->
+                <!--                        <span>Login</span>-->
+                <!--                        <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--                            <g clip-path="url(#clip0_186_609)">-->
+                <!--                                <path d="M9.18207 16.1925L3.6838 16.1522L1.92303 14.3915C0.954614 13.4231 0.172631 12.6204 0.185292 12.6077C0.197953 12.595 2.03791 12.5981 4.27409 12.6146C6.55505 12.6313 8.36335 12.621 8.39336 12.591C8.44398 12.5403 8.22524 12.315 4.30464 8.37975L0.162427 4.22203L1.44669 2.93778L2.73094 1.65352L6.87315 5.78021C10.7937 9.68605 11.0182 9.90404 11.0688 9.85342C11.0988 9.82342 11.1093 8.02834 11.0927 5.76496C11.0764 3.54572 11.0734 1.71962 11.086 1.70696C11.0987 1.6943 11.9012 2.47613 12.8695 3.44436L14.6299 5.20478L14.6707 10.7032C14.6932 13.7274 14.7045 16.2087 14.6959 16.2173C14.6874 16.2258 12.2061 16.2147 9.18207 16.1925Z" fill="white"/>-->
+                <!--                            </g>-->
+                <!--                            <defs>-->
+                <!--                                <clipPath id="clip0_186_609">-->
+                <!--                                    <rect width="16" height="19" fill="white"/>-->
+                <!--                                </clipPath>-->
+                <!--                            </defs>-->
+                <!--                        </svg>-->
+                <!--                    </a>-->
+                <!--                </div>-->
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="nav-bar">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/home" class="active">HOME</a></li>
+                        <li><a href="/about-us">ABOUT US</a></li>
+                        <li><a href="/news">BLOG</a></li>
+                        <li><a href="/contact">CONTACTS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-top-wrapper">
+                <h2 class="heading">
+                    Ready <strong>to collaborate?</strong><br><strong>Drop us</strong> a message
+                </h2>
+                <form action="#">
+                    <a class="btn secondary" href="./contact.html">Send</a>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-logo">
+                <img src="files/Logo.svg" alt="Logo">
+            </div>
+            <div class="container footer-menu">
+                <div class="heading">/MENU</div>
+                <ul class="content">
+                    <li><a href="./home.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT US</a></li>
+                    <li><a href="./news.html">NEWS</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="container footer-contact">
+                <div class="heading">/CONTACTS</div>
+                <div class="content">
+                    <p class="item">INFO@SLIFE.GURU</p>
+                    <p class="item">+380957922117</p>
+                    <p class="item">Ukraine, Vinnytsia, Porika street 28.</p>
+                </div>
+            </div>
+            <div class="container footer-social">
+                <div class="heading big">
+                    <span>JOIN US</span>
+                    <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_186_609)">
+                            <path d="M9.18207 16.1925L3.6838 16.1522L1.92303 14.3915C0.954614 13.4231 0.172631 12.6204 0.185292 12.6077C0.197953 12.595 2.03791 12.5981 4.27409 12.6146C6.55505 12.6313 8.36335 12.621 8.39336 12.591C8.44398 12.5403 8.22524 12.315 4.30464 8.37975L0.162427 4.22203L1.44669 2.93778L2.73094 1.65352L6.87315 5.78021C10.7937 9.68605 11.0182 9.90404 11.0688 9.85342C11.0988 9.82342 11.1093 8.02834 11.0927 5.76496C11.0764 3.54572 11.0734 1.71962 11.086 1.70696C11.0987 1.6943 11.9012 2.47613 12.8695 3.44436L14.6299 5.20478L14.6707 10.7032C14.6932 13.7274 14.7045 16.2087 14.6959 16.2173C14.6874 16.2258 12.2061 16.2147 9.18207 16.1925Z"
+                                  fill="#D5D5D5"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_186_609">
+                                <rect width="16" height="19" fill="#D5D5D5"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="content">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/SLifeComany/">
+                            <img class="icon" src="files/icon-facebook.svg" alt="Facebook">
+                            <div class="name">Facebook</div>
+                        </a>
+                        <a href="https://www.linkedin.com/company/llc-slife/">
+                            <img class="icon" src="files/icon-linkedin.svg" alt="LinkedIn">
+                            <div class="name">Linkedin</div>
+                        </a>
+                        <a href="https://www.instagram.com/slife_company/">
+                            <img class="icon" src="files/icon-instagram.svg" alt="Instagram">
+                            <div class="name">Instagram</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="./pages.js"></script>
+
+</body>
+</html>
