@@ -1,0 +1,38 @@
+
+{% extends "templates/pages/website-base.html" %}
+
+{% block body_class %}about-us{% endblock %}
+
+{% block content %}
+
+<section class="hero hero--blogpost" style="padding-top: 10%;">
+    <div class="blog-container">
+        <div class="blog-header">
+            <span><a href="/blog">Blog</a> / <a href="#">{{ blog_post.blog_category }}</a></span>
+            <h1>{{ blog_post.title }}</h1>
+            <p>{{ blog_post.blog_intro }}</p>
+            <p class="blogpost-date">{{ blog_post.published_on }} · 1 min read</p>
+            <hr>
+        </div>
+        <div class="blog-content">
+            {% if blog_post.content_type == 'Rich Text' and blog_post.content %}
+                <p class="blog-content-text">{{ blog_post.content }}</p>
+            {% elif blog_post.content_type == 'Markdown' and blog_post.content_md %}
+                <p class="blog-content-text">
+                    {{ blog_post.content_md | markdown }}
+                </p>
+            {% elif blog_post.content_type == 'HTML' and blog_post.content_html %}
+                <p class="blog-content-text">
+                    {{ blog_post.content_html | safe }}
+                </p>
+            {% else %}
+                <p class="blog-content-text">Content is not available.</p>
+            {% endif %}
+            
+            <p class="blogpost-publish-time">Published on {{ blog_post.published_on }}</p>
+        </div>
+    </div>
+    
+</section>
+
+{% endblock %}

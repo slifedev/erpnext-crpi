@@ -15,49 +15,23 @@
     </section>
 
     <section class="cards-container">
-
+        {% for post in blog_posts %}
         <div class="card">
-            <img src="files/card-top.png" alt="" class="card-top">
-            <h1>CRPI</h1>
-            <h2>Integration of ERPNext with Prom.ua: Turn Your E-Commerce into an Effective Business Tool </h2>
+            <a href="/news/{{ post.route }}">
+            <img src="{{ post.meta_image or 'files/card-top.png' }}" alt="" class="card-top">
+            <h1>{{ post.blog_category }}</h1>
+            <h2>{{ post.title }}</h2>
             <p>
-                In a world where e-commerce is redefining traditional business models, the "Prom" module for ERPNext
-                plays a
-                crucial role. It not only simplifies integration with Prom.ua, but also offers unprecedented pi
+                {{ post.blog_intro[:120] }}
             </p>
             <div class="bottom-card">
                 <img src="files/card-photo.svg" alt="" class="card-photo">
-                <p class="bottom-card-name">Alex Chumak<br> November 24, 2023 · 1 min read</p>
+                <p class="bottom-card-name">Alex Chumak<br> {{ post.published_on }} · 1 min read</p>
             </div>
+            </a>
         </div>
-        <div class="card">
-            <img src="files/card-top.png" alt="" class="card-top">
-            <h1>CRPI</h1>
-            <h2>Integration of ERPNext with Prom.ua: Turn Your E-Commerce into an Effective Business Tool </h2>
-            <p>
-                In a world where e-commerce is redefining traditional business models, the "Prom" module for ERPNext
-                plays a
-                crucial role. It not only simplifies integration with Prom.ua, but also offers unprecedented pi
-            </p>
-            <div class="bottom-card">
-                <img src="files/card-photo.svg" alt="" class="card-photo">
-                <p class="bottom-card-name">Alex Chumak<br> November 24, 2023 · 1 min read</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="files/card-top.png" alt="" class="card-top">
-            <h1>CRPI</h1>
-            <h2>Integration of ERPNext with Prom.ua: Turn Your E-Commerce into an Effective Business Tool </h2>
-            <p>
-                In a world where e-commerce is redefining traditional business models, the "Prom" module for ERPNext
-                plays a
-                crucial role. It not only simplifies integration with Prom.ua, but also offers unprecedented pi
-            </p>
-            <div class="bottom-card">
-                <img src="files/card-photo.svg" alt="" class="card-photo">
-                <p class="bottom-card-name">Alex Chumak<br> November 24, 2023 · 1 min read</p>
-            </div>
-        </div>
+        {% endfor %}
+        
     </section>
 
 {% endblock %}

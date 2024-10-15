@@ -100,6 +100,7 @@ website_context = {
 
 # nosemgrep
 website_route_rules = [
+    {"from_route": "/news/<route>", "to_route": "blog_post"},
 	{"from_route": "/orders", "to_route": "Sales Order"},
 	{
 		"from_route": "/orders/<path:name>",
