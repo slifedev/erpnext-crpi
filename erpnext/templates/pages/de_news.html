@@ -1,0 +1,37 @@
+
+{% extends "templates/pages/de-website-base.html" %}
+
+{% block body_class %}about-us{% endblock %}
+
+{% block content %}
+
+<section class="hero news">
+    <div class="hero-content news">
+        <h1>NACHRICHTEN <span>BLOG</span></h1>
+        <p>In unserem Blog teilen wir Einblicke, Neuigkeiten und Tipps zu IT-Lösungen, Langlebigkeit und Robotik.
+            Bleiben Sie über die neuesten Trends auf dem Laufenden und entdecken Sie mit Slife neue
+            Möglichkeiten!</p>
+    </div>
+</section>
+
+<section class="cards-container">
+    {% for post in blog_posts %}
+    <div class="card">
+        <a href="/de_news/{{ post.route }}">
+            <img src="{{ post.meta_image or 'files/card-top.png' }}" alt="" class="card-top">
+            <h1>{{ post.blog_category }}</h1>
+            <h2>{{ post.title }}</h2>
+            <p>
+                {{ post.blog_intro[:120] }}
+            </p>
+            <div class="bottom-card">
+                <img src="files/card-photo.svg" alt="" class="card-photo">
+                <p class="bottom-card-name">Alex Chumak<br> {{ post.published_on }} · 1 min read</p>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+
+</section>
+
+{% endblock %}

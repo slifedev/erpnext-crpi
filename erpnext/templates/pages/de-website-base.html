@@ -18,8 +18,8 @@
             </div>
             <div class="header-right">
                 <div class="language-switcher">
-                    <a class="lang active" href="/home">ENG</a>
-                    <a class="lang" href="/de-home">DE</a>
+                    <a class="lang " href="/home">ENG</a>
+                    <a class="lang active" href="/de-home">DE</a>
                 </div>
                 <!--                <div class="login">-->
                 <!--                    <a href="#">-->
@@ -42,11 +42,11 @@
             <div class="nav-bar">
                 <nav>
                     <ul class="nav-links">
-                        <li><a href="/home" class="{% if route == 'home' %}active{% endif %}">HOME</a></li>
-                        <li><a href="/about-us" class="{% if route == 'about-us' %}active{% endif %}">ABOUT US</a></li>
-                        <li><a href="/news" class="{% if route == 'news' %}active{% endif %}">BLOG</a></li>
-                        <li><a href="/contact" class="{% if route == 'contact' %}active{% endif %}">CONTACTS</a></li>
-                    </ul>                    
+                        <li><a href="/de-home" class="{% if route == 'de-home' %}active{% endif %}">STARTSEITE</a></li>
+                        <li><a href="/de-about-us" class="{% if route == 'de-about-us' %}active{% endif %}">ÜBER UNS</a></li>
+                        <li><a href="/de_news" class="{% if route == 'de_news' %}active{% endif %}">NACHRICHT</a></li>
+                        <li><a href="/de-contact" class="{% if route == 'de-contact' %}active{% endif %}">KONTAKTE</a></li>
+                    </ul>
                 </nav>
             </div>
         </div>
@@ -58,10 +58,10 @@
         <div class="footer-top">
             <div class="footer-top-wrapper">
                 <h2 class="heading">
-                    Ready <strong>to collaborate?</strong><br><strong>Drop us</strong> a message
+                    Du willst mit <strong>uns zusammenarbeiten?</strong><br><strong>Schreib</strong> uns einfach
                 </h2>
                 <form action="#">
-                    <a class="btn secondary" href="./contact.html">Send</a>
+                    <a class="btn secondary" href="/de-contact">Schicken</a>
                 </form>
             </div>
         </div>
@@ -72,14 +72,14 @@
             <div class="container footer-menu">
                 <div class="heading">/MENU</div>
                 <ul class="content">
-                    <li><a href="./home.html">HOME</a></li>
-                    <li><a href="./about.html">ABOUT US</a></li>
-                    <li><a href="./news.html">NEWS</a></li>
-                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a href="/de-home">STARTSEITE</a></li>
+                    <li><a href="/de-about-us">ÜBER UNS</a></li>
+                    <li><a href="/de_news">NACHRICHT</a></li>
+                    <li><a href="/de-contact">KONTAKTE</a></li>
                 </ul>
             </div>
             <div class="container footer-contact">
-                <div class="heading">/CONTACTS</div>
+                <div class="heading">/KONTAKTE</div>
                 <div class="content">
                     <p class="item">INFO@SLIFE.GURU</p>
                     <p class="item">+380957922117</p>
@@ -88,7 +88,7 @@
             </div>
             <div class="container footer-social">
                 <div class="heading big">
-                    <span>JOIN US</span>
+                    <span>BEGLEITEN SIE UNS</span>
                     <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_186_609)">
                             <path d="M9.18207 16.1925L3.6838 16.1522L1.92303 14.3915C0.954614 13.4231 0.172631 12.6204 0.185292 12.6077C0.197953 12.595 2.03791 12.5981 4.27409 12.6146C6.55505 12.6313 8.36335 12.621 8.39336 12.591C8.44398 12.5403 8.22524 12.315 4.30464 8.37975L0.162427 4.22203L1.44669 2.93778L2.73094 1.65352L6.87315 5.78021C10.7937 9.68605 11.0182 9.90404 11.0688 9.85342C11.0988 9.82342 11.1093 8.02834 11.0927 5.76496C11.0764 3.54572 11.0734 1.71962 11.086 1.70696C11.0987 1.6943 11.9012 2.47613 12.8695 3.44436L14.6299 5.20478L14.6707 10.7032C14.6932 13.7274 14.7045 16.2087 14.6959 16.2173C14.6874 16.2258 12.2061 16.2147 9.18207 16.1925Z"
