@@ -23,13 +23,12 @@ def get_context(context):
                 post.blogger,
                 ['full_name', 'avatar'])
             post['blogger_full_name'] = bloggerData[0] if bloggerData[0] else 'Unknown blogger'
-            post['blogger_photo'] = bloggerData[1] if bloggerData[1] else ''
-            print('post' , post)
-            print('bloggerData', bloggerData)
+            
         except Exception as e:
             print("Error fetching blogger:", str(e))
             post['blogger_full_name'] = 'Unknown Blogger'
             post['blogger_photo'] = ''
+            
 
     # Додати блог-пости в контекст для рендерингу в шаблоні
     context.blog_posts = blog_posts
