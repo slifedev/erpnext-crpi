@@ -25,8 +25,8 @@
                 {{ post.blog_intro[:120] }}
             </p>
             <div class="bottom-card">
-                <img src="files/card-photo.svg" alt="" class="card-photo">
-                <p class="bottom-card-name">Alex Chumak<br> {{ post.published_on }} · 1 min read</p>
+                <img src="{{ post.blogger_photo or 'files/card-photo.svg' }}" alt="" class="card-photo">
+                <p class="bottom-card-name">{{ post.blogger_full_name }}<br> {{ post.published_on }} · 1 min read</p>
             </div>
         </a>
     </div>

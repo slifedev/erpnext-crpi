@@ -8,8 +8,6 @@ def get_context(context):
         fields=['title', 'route', 'published_on', 'blog_intro', 'meta_image', 'blog_category', 'blogger'],
         order_by="published_on desc"
     )
-
-
     for post in blog_posts:
         try:
             post['route'] =  post.get('route').split('/')[2]
@@ -29,7 +27,5 @@ def get_context(context):
             post['blogger_full_name'] = 'Unknown Blogger'
             post['blogger_photo'] = ''
             
-
     # Додати блог-пости в контекст для рендерингу в шаблоні
     context.blog_posts = blog_posts
-    
