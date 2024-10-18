@@ -1207,6 +1207,7 @@ footer.footer .footer-bottom .footer-social .social-links a:last-child .name {
   margin-right: 10px;
   width: 42px;
   height: 42px;
+  border-radius: 50%;
 }
 .cards-container .card .bottom-card-name {
   padding: 0;
