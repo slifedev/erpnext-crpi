@@ -23,7 +23,7 @@ def get_context(context):
                 post.blogger,
                 ['full_name', 'avatar'])
             post['blogger_full_name'] = bloggerData[0] if bloggerData[0] else 'Unknown blogger'
-            
+            post['blogger_photo'] = bloggerData[1] if bloggerData[1] else ''
         except Exception as e:
             print("Error fetching blogger:", str(e))
             post['blogger_full_name'] = 'Unknown Blogger'
