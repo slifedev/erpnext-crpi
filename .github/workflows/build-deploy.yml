@@ -13,7 +13,7 @@ jobs:
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_rsa
           echo "${{ secrets.BUILD_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.BUILD_SSH_HOST }} > ~/.ssh/known_hosts
+          ssh-keyscan -H ${{ secrets.BUILD_SSH_HOST }} -p ${{ secrets.BUILD_SSH_PORT }} > ~/.ssh/known_hosts
       - name: Build
         run: | 
           ssh -o ServerAliveInterval=60 ${{ secrets.BUILD_SSH_USER }}@${{ secrets.BUILD_SSH_HOST }} -p ${{ secrets.BUILD_SSH_PORT }}
