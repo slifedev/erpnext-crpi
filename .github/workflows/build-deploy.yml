@@ -15,7 +15,11 @@ jobs:
           echo "${{ secrets.BUILD_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.BUILD_SSH_HOST }} > ~/.ssh/known_hosts
       - name: Build
-        run: ssh -o ServerAliveInterval=60 ${{ secrets.BUILD_SSH_USER }}@${{ secrets.BUILD_SSH_HOST }} "cd ${{ secrets.BUILD_WORKDIR }} && ./build.sh"
+        run: | 
+        ssh -o ServerAliveInterval=60 ${{ secrets.BUILD_SSH_USER }}@${{ secrets.BUILD_SSH_HOST }} -p ${{ secrets.SSH_PORT }} \
+        "DOCKER_USER=${{ sercrets.DOCKER_USER }} \
+        DOCKER_TOKEN=${{ secrets.DOCKER_TOKEN }} \
+        cd ${{ secrets.BUILD_WORKDIR }} && ./build.sh"
       - name: Clean Up
         run: rm -rf ~/.ssh
   
