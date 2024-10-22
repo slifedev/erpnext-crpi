@@ -17,7 +17,7 @@ jobs:
       - name: Build
         run: | 
           ssh -o ServerAliveInterval=60 ${{ secrets.BUILD_SSH_USER }}@${{ secrets.BUILD_SSH_HOST }} -p ${{ secrets.BUILD_SSH_PORT }} \
-          'echo "$DOCKER_TOKEN" | docker login --username "$DOCKER_USERNAME" --password-stdin || { echo "Failed to docker login" && exit 1; } \
+          'echo '"${{ secrets.DOCKER_TOKEN }}"' | docker login --username '"${{ secrets.DOCKER_USERNAME }}"' --password-stdin || { echo "Failed to docker login" && exit 1; } \
           && cd '"${{ secrets.BUILD_WORKDIR }}"' && ./build.sh'
       - name: Clean Up
         run: rm -rf ~/.ssh
