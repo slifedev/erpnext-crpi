@@ -17,7 +17,7 @@ jobs:
       - name: Build
         run: | 
           ssh -o ServerAliveInterval=60 ${{ secrets.BUILD_SSH_USER }}@${{ secrets.BUILD_SSH_HOST }} -p ${{ secrets.SSH_PORT }}
-          "DOCKER_USER=${{ sercrets.DOCKER_USER }}
+          "DOCKER_USER=${{ secrets.DOCKER_USER }}
           DOCKER_TOKEN=${{ secrets.DOCKER_TOKEN }}
           cd ${{ secrets.BUILD_WORKDIR }} && ./build.sh"
       - name: Clean Up
