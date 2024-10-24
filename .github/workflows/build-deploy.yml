@@ -31,8 +31,8 @@ jobs:
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_rsa
           echo "${{ secrets.DEPLOY_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.DEPLOY_SSH_HOST }} > ~/.ssh/known_hosts
+          ssh-keyscan -H -p ${{ secrets.DEPLOY_SSH_PORT }} ${{ secrets.DEPLOY_SSH_HOST }} > ~/.ssh/known_hosts
       - name: Deploy
-        run: ssh -o ServerAliveInterval=60 ${{ secrets.DEPLOY_SSH_USER }}@${{ secrets.DEPLOY_SSH_HOST }} "cd ${{ secrets.DEPLOY_WORKDIR }} && ./deploy.sh"
+        run: ssh -o ServerAliveInterval=60 ${{ secrets.DEPLOY_SSH_USER }}@${{ secrets.DEPLOY_SSH_HOST }} -p ${{ secrets.DEPLOY_SSH_PORT }} "cd ${{ secrets.DEPLOY_WORKDIR }} && ./deploy.sh"
       - name: Clean Up
         run: rm -rf ~/.ssh
