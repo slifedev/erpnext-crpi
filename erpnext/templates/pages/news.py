@@ -8,6 +8,7 @@ def get_context(context):
         fields=['title', 'route', 'published_on', 'blog_intro', 'meta_image', 'blog_category', 'blogger'],
         order_by="published_on desc"
     )
+
     for post in blog_posts:
         try:
             post['route'] =  post.get('route').split('/')[2]

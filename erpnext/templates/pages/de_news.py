@@ -5,9 +5,10 @@ def get_context(context):
     # Отримати всі опубліковані блог-пости
     blog_posts = frappe.get_all('Blog Post', 
         filters={'published': 1}, 
-        fields=['title', 'route', 'published_on', 'blog_intro', 'meta_image', 'blog_category'],
+        fields=['title', 'route', 'published_on', 'blog_intro', 'meta_image', 'blog_category', 'blogger'],
         order_by="published_on desc"
     )
+    
     for post in blog_posts:
         try:
             post['route'] =  post.get('route').split('/')[2]
